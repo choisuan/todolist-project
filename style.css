@@ -15,12 +15,12 @@ body {
 
 .task-area {
     border: 1px solid lightgrey;
-    position:relative;
 }
 
 .task-tabs {
     display: flex;
     border-bottom: 1px solid lightgrey;
+    position:relative;
 }
 
 .task-tabs div {
