@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>메모앱</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,24 +21,31 @@
   </head>
   <body>
     <div class="container">
-      <h1 style="font-family: 'Cafe24Supermagic-Bold-v1.0'">To Do List</h1>
+      <h1>
+        <span style="color: #639bf4"><i class="fa-solid fa-cloud"></i></span>To
+        Do List<span style="color: #639bf4"
+          ><i class="fa-solid fa-cloud"></i
+        ></span>
+      </h1>
       <section class="input-area">
-        <input type="text" id="task-input" placeholder="오늘의 할일은?" style="font-family: 'Cafe24Supermagic-Bold-v1.0'" />
-        <button id="add-button">+</button>
+        <input type="text" id="task-input" placeholder="오늘의 할일은?" />
+        <button id="add-button">
+          <span style="color: #d8e2f2"
+            ><i class="fa-solid fa-circle-plus fa-2x"></i
+          ></span>
+        </button>
       </section>
       <section class="task-area">
         <div class="task-tabs">
           <div id="underline"></div>
-          <div style="font-family: 'Cafe24Supermagic-Bold-v1.0'">모두</div>
-          <div style="font-family: 'Cafe24Supermagic-Bold-v1.0'">진행중</div>
-          <div style="font-family: 'Cafe24Supermagic-Bold-v1.0'">끝남</div>
+          <div id="all">전체</div>
+          <div id="ongoing">진행중</div>
+          <div id="done">완료</div>
         </div>
-        <div id="task-board">
-
-        </div>
+        <div id="task-board"></div>
       </section>
     </div>
-      
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
