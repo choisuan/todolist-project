@@ -117,8 +117,12 @@ body {
 }
 
 @media (max-width: 600px) {
+  body {
+    background-image: none;
+  }
+
   .container {
-    width: 80%;
+    width: 100%;
   }
 
   .container h1 {
@@ -150,5 +154,9 @@ body {
 
   .button-area button {
     width: 2em;
+  }
+
+  .input-area {
+    margin: 0.5em 0;
   }
 }
