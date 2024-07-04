@@ -59,16 +59,15 @@ body {
 }
 
 .task-area {
-  border: 1px solid #d8e2f2;
   margin-top: 1.5em;
 }
 
 .task-tabs {
   display: flex;
-  border-bottom: 1px solid #d8e2f2;
+  border: 3px dotted #d8e2f2;
   position: relative;
   font-family: "Cafe24Supermagic-Bold-v1.0";
-  font-size: 13pt;
+  font-size: 14pt;
 }
 
 .task-tabs div {
@@ -80,9 +79,9 @@ body {
   height: 4px;
   background-color: #639bf4;
   position: absolute;
-  width: 65px;
+  width: 70px;
   left: 0px;
-  top: 58px;
+  top: 63px;
   padding: 0;
   transition: 0.5s;
 }
@@ -93,8 +92,9 @@ body {
   height: 60px;
   line-height: 60px;
   padding-left: 10px;
-  border-bottom: 1px solid #d8e2f2;
+  border-bottom: 2px solid #d8e2f2;
   font-family: "Cafe24Supermagic-Bold-v1.0";
+  font-size: 14pt;
 }
 
 .task-done {
@@ -114,4 +114,41 @@ body {
   width: 5em;
   margin: 0;
   background-color: white;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 80%;
+  }
+
+  .container h1 {
+    font-size: 25pt;
+  }
+
+  #task-input {
+    font-size: 11pt;
+  }
+
+  .task {
+    font-size: 12pt;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .task-tabs {
+    font-size: 12pt;
+  }
+  .task-tabs div {
+    padding: 0.8em;
+  }
+  #underline {
+    width: 52px;
+    left: 0px;
+    top: 47px;
+    padding: 0;
+  }
+
+  .button-area button {
+    width: 2em;
+  }
 }
